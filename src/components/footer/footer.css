@@ -1,14 +1,11 @@
 #footer-cont{
     /* remove */
-margin-top: 300px;
+    margin-top: 300px;
     /* remove */
-    border: solid 1px green;
-   
-    display: grid;
-    align-items: center;
+    display: block;
+    width: 100%;
 }
 #footer-inner{
-    border: solid 1px red;
     max-width: 1260px;
     margin-left: auto;
     margin-right: auto;
@@ -21,8 +18,40 @@ margin-top: 300px;
 #footer-top{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 1.25em;
+
+}
+#footer-logo-cont{
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 #logo{
     width: 218.25px;
     height: 22px;
+}
+.icon{
+    height: 27px;
+    width: 27px;
+    margin-right: 3em;
+    color: black;
+    margin-left: 5px;
+}
+.icon-link{
+    display: inline-flex;
+}
+#footer-stores-inner{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    grid-template-columns: 130px 130px;
+    grid-gap: 35px;
+
+}
+#footer-stores{
+    display: grid;
+    align-items: center;
+    justify-items: end;
 }
