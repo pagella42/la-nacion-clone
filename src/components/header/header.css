@@ -1,0 +1,231 @@
+@media only screen and (min-width: 1040px) {
+
+
+#header-cont{
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header-inner{
+    max-width: 1260px;
+    height: 35px;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+}
+#header-inner-search{
+    max-width: 1260px;
+    height: 35px;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+}
+#logo-cont{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+   
+}
+#logo{
+    width: 307.53px;
+    height: 30px;
+}
+#logo:hover{
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+#button-cont{
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+.user-butt{
+    padding: 0.75em 1.5em;
+    font-family: "Arial", "sans-serif";
+    border-radius: 3px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    height: 100%;
+    font-size: 0.75em;
+    padding: 0.75em 1.5em;
+}
+.user-butt:hover{
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+#user-sub{
+    background-color: #ffff24;
+    border: 1px solid #cccccc;
+    color: #000000;
+    margin-right: 35px;
+}
+
+#user-ing{
+    background-color: #ffffff;
+    border: 1px solid #0074c4;
+    color: #0074c4;
+}
+#user-ing:hover{
+    background-color: #0074c4;
+    border: 1px solid #ffffff#0074c4;
+    color: #ffffff;
+}
+
+#header-menu{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+#header-menu-title{
+    font-family: Arial;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#burger-cont{
+    display: grid;
+    grid-template-columns: 25px 70px;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+}
+
+#search{
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    position: relative;
+    z-index: 100;
+    background: transparent;
+    width: 169px;
+}
+#search:focus{
+    outline: none;
+    width: 80%;
+    transition: ease-in-out, all .35s ease-in-out;
+}
+
+#buscar-butt-search{
+     background-color: #0074c4;
+    border: 1px solid #0074c4;
+    color: #ffffff;
+   margin-left: 10px;
+    font-size: 0.75em;
+    padding: 0.75em 1.5em;
+    border-radius: 3px;
+    font-weight: 700;
+    outline: none;
+}
+#buscar-butt{
+    display: none;
+}
+.searchIcon{
+    position: absolute;
+    width: 16.5px;
+    height: 16.5px;
+    left:  165px;
+    top: 10px;
+}
+
+#search-bar-cont{
+    position: relative;
+}
+
+
+}
+
+@media only screen and (max-width: 1040px) {
+
+#header-cont{
+    display: block;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+#header-inner{
+    max-width: 1260px;
+    height: 19px;
+    padding-right: 1.875em;
+    padding-left: 1.875em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo-cont{
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+   
+}
+#logo{
+    width: 168.64px;
+    height: 17px;
+}
+#logo:hover{
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+#button-cont{
+    display: grid;
+    justify-items: end;
+    vertical-align: baseline;
+}
+    
+.user-butt:hover{
+    opacity: 0.8;
+    transition: opacity .2s ease-in-out;
+}
+
+#user-sub{
+    background-color: #ffffff;
+    border: 0px none #ffffff;
+    color: #0074c4;
+    font-family: "Arial", "sans-serif";
+    outline: none;
+    cursor: pointer;
+    font-size: 0.80em;
+    font-weight: 530;
+    text-decoration-style: solid;
+    padding: 0px;
+}
+
+#user-ing{
+    display: none;
+}
+
+#header-menu{
+    display: none;
+}
+
+
+
+
+}
+

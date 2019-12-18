@@ -1,0 +1,28 @@
+#footer-cont{
+    /* remove */
+margin-top: 300px;
+    /* remove */
+    border: solid 1px green;
+   
+    display: grid;
+    align-items: center;
+}
+#footer-inner{
+    border: solid 1px red;
+    max-width: 1260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#footer-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#logo{
+    width: 218.25px;
+    height: 22px;
+}
