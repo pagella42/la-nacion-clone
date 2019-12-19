@@ -7,20 +7,16 @@ import Body from './body/Body';
 
 
 
-function Acumulado (){
+function Acumulado() {
 
- 
-  
+
+
     return (
-   <div>
-           <Header/> 
-
-       <Body/>
-       <Footer/>
-       
-       
-        
-   </div>
+        <div>
+            <Header />
+            <Body />
+            <Footer />
+        </div>
     )
 }
 

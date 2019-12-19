@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './header.css'
 import './burger.css'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import HeaderMenu from './header-menu';
 import Headroom from 'react-headroom'
 
