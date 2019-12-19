@@ -2,12 +2,10 @@
 let express = require('express')
 let app = express()
 let bodyParser = require("body-parser")
-let api = require('./server/routes/api')
 const request = require('request')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-app.use('/', api)
 
 
 articlesProcess = (articles)=>{
