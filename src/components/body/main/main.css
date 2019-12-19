@@ -1,0 +1,55 @@
+
+#main{
+    margin-right: 80px;
+    }
+    #title{
+        font-family: "SuecaSlab", "Georgia", "serif";
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 2.3125rem;
+        letter-spacing: -0.4px;
+        border-bottom: 3px solid #000000;
+        font-weight: bolder;
+    }
+    #tag-cont{
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        
+    }
+    .tag{
+        font-family: "Arial", "sans-serif";
+        font-size: 0.875rem;
+        margin-right: 5px;
+        display: inline-block;
+        position: relative;
+        color: #0074c4;
+        margin-bottom: 2px;
+    }
+    .tag-link{
+        text-decoration: none;
+    
+    }
+
+    #articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .article-photo{
+        width: 282.81px;
+        height: 188.53px;
+    }
+    .article-photo-cont{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .article-title-cont{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+    }
+

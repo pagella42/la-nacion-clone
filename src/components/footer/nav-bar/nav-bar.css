@@ -1,0 +1,50 @@
+@media only screen and (min-width: 1040px) {
+    #navbar-cont{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1040px) {
+
+    #navbar-cont{
+    position: fixed;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background: #fff;
+    border-top: 1px solid #d9d9d9;
+    display: grid;
+    height: 44px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    }
+    #navbar-inner{
+        max-width: 450px;
+        display: grid;
+    }
+    #icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #text{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+
+    }
+    .text{
+        font-family: "Arial", "sans-serif";
+    font-size: 0.6875rem;
+    color: #333333;
+    }
+    .icon{
+        height: 32px;
+        width: 32px;
+    }
+   
+}

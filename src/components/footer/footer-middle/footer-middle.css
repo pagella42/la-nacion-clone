@@ -1,0 +1,44 @@
+
+@media only screen and (max-width: 1040px) {
+#footer-middle{
+    display: none
+}
+}
+
+@media only screen and (min-width: 1040px) {
+    #footer-middle{
+        display: grid;
+    grid-template-columns: 1fr 260px;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    }
+}
+
+#footer-links{
+    display: grid;
+}
+.footer-link{
+    font-size: 0.875rem;
+    color: #0074c4;
+    margin-right: 1.3125em;
+    width: fit-content;
+    font-weight: 500;
+
+}
+.footer-links-href{
+    text-decoration: none;
+}
+
+#footer-captcha{
+    display: grid;
+    justify-items: end;
+    text-align: end;
+}
+.footer-captcha-link{
+    text-decoration: none;
+    font-size: 0.875rem;
+    color: #0074c4;
+    width: fit-content;
+    margin-left: 0.9375em;
+    font-weight: 500;
+}
