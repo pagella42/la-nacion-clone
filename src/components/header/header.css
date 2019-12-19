@@ -46,11 +46,11 @@
     cursor: pointer;
    
 }
-#logo{
+#logo-head{
     width: 307.53px;
     height: 30px;
 }
-#logo:hover{
+#logo-head:hover{
     opacity: 0.8;
     transition: opacity .2s ease-in-out;
 }
@@ -192,11 +192,11 @@
     cursor: pointer;
    
 }
-#logo{
+#logo-head{
     width: 168.64px;
     height: 17px;
 }
-#logo:hover{
+#logo-head:hover{
     opacity: 0.8;
     transition: opacity .2s ease-in-out;
 }

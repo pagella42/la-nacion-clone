@@ -20,7 +20,7 @@ function Header() {
             <div id={`header-inner${container}`}>
             <HeaderMenu focus={focus} setFocus={setFocus} container={container} setContainer={setContainer}/>
                
-                {!focus ? <div id="logo-cont">  <a href="https://www.lanacion.com.ar/"><img id="logo" src={require('../../assets/lanacion.png')} /></a>  </div> : null}
+                {!focus ? <div id="logo-cont">  <a href="https://www.lanacion.com.ar/"><img id="logo-head" src={require('../../assets/lanacion.png')} /></a>  </div> : null}
                 
                 <div id="button-cont">
                     <div>
