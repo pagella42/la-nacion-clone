@@ -4,12 +4,24 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './main.css'
 import '../body.css'
 
-import { Link } from 'react-router-dom'
 
 
 function Main(props) {
+    const dates = {
+        "01":"Enero",
+        "02":"Febrero",
+        "03":"Marzo",
+        "04":"Abril",
+        "05":"Mayo",
+        "06":"Junio",
+        "07":"Julio",
+        "08":"Agosto",
+        "09":"Septiembre",
+        "10":"Octubre",
+        "11":"Noviembre",
+        "12":"Diciembre",
 
-
+    }
     return (
 
         <div id="main">
@@ -19,11 +31,11 @@ function Main(props) {
 
             <div id="tag-cont">
                 {props.tags ?
-                    props.tags.map((t, i) => i < 10 ? <Link class="tag-link" to="/"> <span class="tag">{t} •</span></Link> : null) :
+                    props.tags.map((t, i) => i < 10 ?  <a href={`https://www.lanacion.com.ar/tema/${props.tagSlug[t]}`}><span class="tag">{t} •</span></a>: null) :
                     null
                 }
                 {props.tags ?
-                    props.tags.map((t, i) => i == 10 ? <Link class="tag-link" to="/"> <span class="tag">{t}</span></Link> : null) :
+                    props.tags.map((t, i) => i == 10 ? <a href={`https://www.lanacion.com.ar/tema/${props.tagSlug[t]}`}><span class="tag">{t}</span></a> : null) :
                     null}
             </div>
 
@@ -31,11 +43,15 @@ function Main(props) {
                 {props.articles ?
                     props.articles.map(a => a.subtype == 7 ?
                         <div class="article">
-                            <div class="article-photo-cont">
+                            <a href={`https://www.lanacion.com.ar${a.website_url}`}>
+                              <div class="article-photo-cont">
                                 <img class="article-photo" src={a.promo_items.basic.url} />
-                            </div>
+                            </div>  
+                            </a>
+                            
                             <div class="article-title-cont">
-                                <span>{a.headlines.basic}</span>
+                                <span class="article-title">{a.headlines.basic}</span>
+                                <span class="article-date">{ a.display_date.split("-")[2].split("T")[0] +" de " + dates[a.display_date.split("-")[1]] +" de " + a.display_date.split("-")[0]}</span>
                             </div>
                         </div> :
                         null) :

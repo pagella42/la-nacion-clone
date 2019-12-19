@@ -8,11 +8,15 @@
     padding-top: 15px;
     padding-bottom: 15px;
     background: #fff;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     width: 100%;
+    z-index: 30;
+    transition: top 0.2s ease-in-out;
 }
-
+.nav-up {
+    top: 65px; 
+  }
 #header-inner{
     max-width: 1260px;
     height: 35px;
@@ -165,6 +169,7 @@
     background: #fff;
     position: fixed;
     width: 100%;
+    z-index: 30;
 }
 
 #header-inner{
@@ -230,5 +235,9 @@
 
 
 
+}
+
+#header-cont{
+    z-index: 30;
 }
 

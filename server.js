@@ -13,14 +13,16 @@ app.use('/', api)
 articlesProcess = (articles)=>{
   let data = {
     articles: articles,
-    tags:[]
+    tags:[],
+    tagSlug:{}
   }
 
   let unsorted = []
   
   for(let tags of articles){
     tags.taxonomy.tags.forEach(t =>{
-       !unsorted.includes(t.text)? unsorted.push(t.text):null
+       !unsorted.includes(t.text)?  unsorted.push(t.text) :null
+       !data.tagSlug[t.text] ? data.tagSlug[t.text] = t.slug : null
     })
   }
   data.tags = unsorted.sort(function(a, b){

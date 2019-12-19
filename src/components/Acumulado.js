@@ -13,9 +13,12 @@ function Acumulado (){
   
     return (
    <div>
-       <Header/>
+           <Header/> 
+
        <Body/>
        <Footer/>
+       
+       
         
    </div>
     )

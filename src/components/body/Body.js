@@ -8,10 +8,14 @@ import Main from './main/Main';
 
 function Body() {
 
+    
     useEffect(() => getData(), [])
 
     const [articles, setArticles] = useState([])
     const [tags, setTags] = useState([])
+    const [tagSlug, setTagSlug] = useState([])
+
+
 
     function getData() {
         axios.get('http://localhost:5000/articles')
@@ -19,7 +23,7 @@ function Body() {
                 response => {
                     setArticles(response.data.articles)
                     setTags(response.data.tags)
-
+                    setTagSlug(response.data.tagSlug)
                 }
             )
     }
@@ -30,7 +34,7 @@ function Body() {
                 <div id="banner-inner"></div>
             </div>
             <div id="main-outter">
-                <Main tags={tags} articles={articles}/>
+                <Main tagSlug={tagSlug} tags={tags} articles={articles}/>
                 <div id="side-bar">
                     <div class="banner-side"></div>
                     <div class="banner-side"></div>

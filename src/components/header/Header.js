@@ -4,6 +4,7 @@ import './burger.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import HeaderMenu from './header-menu';
+import Headroom from 'react-headroom'
 
 function Header() {
 
@@ -13,6 +14,8 @@ function Header() {
    
 
     return (
+        <Headroom style={{zIndex:30}}>
+
         <div id="header-cont">
             <div id={`header-inner${container}`}>
             <HeaderMenu focus={focus} setFocus={setFocus} container={container} setContainer={setContainer}/>
@@ -28,6 +31,7 @@ function Header() {
             </div>
 
         </div>
+        </Headroom>
     )
 }
 
