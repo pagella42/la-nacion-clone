@@ -95,7 +95,7 @@
     .article-title-cont{
         width: 100%;
         display: grid;
-        justify-items: center;
+        justify-items: start;
     }
 
     .article-title{
@@ -105,12 +105,15 @@
     text-transform: lowercase;
     font-family: "SuecaSlab", "Georgia", "serif";
     font-weight: bold;
+    text-align: start;
     }
 
     .article-date{
         font: 400 0.875rem "Arial", "sans-serif";
     color: #5a5a5a;
     margin-top: 0.375em;
+    text-align: start;
+
     }
 .article{
     margin-bottom: 30px;
@@ -147,3 +150,9 @@
     align-items: center;
 }
 
+.gray{
+    opacity: 0.5;
+}
+.none{
+    display: none;
+}

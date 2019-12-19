@@ -7,6 +7,9 @@ import '../body.css'
 
 
 function Main(props) {
+
+    // const [opacity, setOpacity] = useState("")
+
     const dates = {
         "01": "Enero",
         "02": "Febrero",
@@ -22,8 +25,8 @@ function Main(props) {
         "12": "Diciembre",
 
     }
+    let opacity=""
     return (
-
         <div id="main">
             <div>
                 <span id="title">Acumulado Grilla</span>
@@ -41,8 +44,11 @@ function Main(props) {
             <div>
                 <div id="articles">
                     {props.articles ?
-                        props.articles.map(a => a.subtype == 7 ?
-                            <div class="article">
+                        props.articles.map((a,i )=> a.subtype == 7 ?
+                        <div>
+                            
+                       <span class="none">{ i == (props.articles.length - 1) ? opacity = "gray" :null}</span> 
+                        <div class={`article ${opacity}`}>
                                 <a href={`https://www.lanacion.com.ar${a.website_url}`}>
                                     <div class="article-photo-cont">
                                         <img class="article-photo" src={a.promo_items.basic.url} />
@@ -53,7 +59,7 @@ function Main(props) {
                                     <span class="article-title">{a.headlines.basic}</span>
                                     <span class="article-date">{a.display_date.split("-")[2].split("T")[0] + " de " + dates[a.display_date.split("-")[1]] + " de " + a.display_date.split("-")[0]}</span>
                                 </div>
-                            </div> :
+                            </div></div> :
                             null) :
                         null}
                 </div>
