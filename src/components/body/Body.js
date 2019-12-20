@@ -18,7 +18,7 @@ function Body() {
 
 
     function getData() {
-        axios.get('http://localhost:5000/articles')
+        axios.get('http://localhost:8000/articles')
             .then(
                 response => {
                     setArticles(response.data.articles)

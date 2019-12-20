@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+
 @media only screen and (min-width: 1200px) {
     #articles{
         display: grid;
@@ -100,10 +103,10 @@
 
     .article-title{
         font-family: sans-serif;
-    font-size: 1.0625rem;
+    font-size: 1.2rem;
     letter-spacing: -0.4px;
     text-transform: lowercase;
-    font-family: "SuecaSlab", "Georgia", "serif";
+    font-family: 'Nunito', sans-serif;
     font-weight: bold;
     text-align: start;
     }

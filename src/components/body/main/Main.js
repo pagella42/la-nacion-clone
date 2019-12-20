@@ -8,7 +8,6 @@ import '../body.css'
 
 function Main(props) {
 
-    // const [opacity, setOpacity] = useState("")
 
     const dates = {
         "01": "Enero",
